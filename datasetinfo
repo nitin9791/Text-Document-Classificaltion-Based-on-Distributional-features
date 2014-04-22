@@ -1,0 +1,6 @@
+download dataset
+convert it into .txt files with class names as class1,class2 and each class contain files as 1.txt,2.txt,3.txt and so on...
+
+dataset link is  
+http://people.csail.mit.edu/u/j/jrennie/public_html/20Newsgroups/
+
