@@ -1,0 +1,4 @@
+Xref: cantaloupe.srv.cs.cmu.edu comp.sys.mac.misc:43411 comp.sys.mac.hardware:51941
+Newsgroups: comp.sys.mac,comp.sys.mac.misc,comp.sys.mac.hardware
+Path: cantaloupe.srv.cs.cmu.edu!crabapple.srv.cs.cmu.edu!fs7.ece.cmu.edu!europa.eng.gtefsd.com!howland.reston.ans.net!zaphod.mps.ohio-state.edu!cs.utexas.edu!uunet!mcsun!uknet!pipex!sunic!celsiustech.se!admin.kth.se!kth.se!hemul.nada.kth.se!d88-jwa
+From: d88-jwa@hemul.nada.kth.se (Jon W

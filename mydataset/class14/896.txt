@@ -1,0 +1,8 @@
+Newsgroups: sci.med
+Path: cantaloupe.srv.cs.cmu.edu!das-news.harvard.edu!noc.near.net!uunet!pipex!sunic!kitten.umdc.umu.se!mac19.hist.umu.se!user
+From: per-arne.melander@histocel.umu.se (Per-Arne Melander)
+Subject: HELP-purification of neutrophils from mice.
+Message-ID: <per-arne.melander-300493094156@mac19.hist.umu.se>
+Followup-To: sci.med
+Sender: news@kitten.umdc.umu.se
+Organization: University of Ume

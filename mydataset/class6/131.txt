@@ -1,0 +1,2 @@
+Path: cantaloupe.srv.cs.cmu.edu!crabapple.srv.cs.cmu.edu!bb3.andrew.cmu.edu!news.sei.cmu.edu!cis.ohio-state.edu!zaphod.mps.ohio-state.edu!howland.reston.ans.net!sol.ctr.columbia.edu!ira.uka.de!news.dfn.de!uni-muenster.de!not-for-mail
+From: viola@asterix.uni-muenster.de (J

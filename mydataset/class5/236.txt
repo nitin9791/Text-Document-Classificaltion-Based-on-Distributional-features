@@ -1,0 +1,3 @@
+Newsgroups: comp.sys.mac.hardware
+Path: cantaloupe.srv.cs.cmu.edu!rochester!udel!darwin.sura.net!haven.umd.edu!uunet!mcsun!sunic!celsiustech.se!admin.kth.se!kth.se!hemul.nada.kth.se!d88-jwa
+From: d88-jwa@hemul.nada.kth.se (Jon W

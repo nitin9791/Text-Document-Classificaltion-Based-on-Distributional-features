@@ -1,0 +1,407 @@
+Xref: cantaloupe.srv.cs.cmu.edu comp.sys.ibm.pc.hardware:60595 comp.sys.ibm.pc.misc:34227 comp.os.ms-windows.advocacy:7061 comp.os.os2.advocacy:17826 comp.sys.mac.advocacy:6089 comp.sys.mac.hardware:51892
+Path: cantaloupe.srv.cs.cmu.edu!das-news.harvard.edu!noc.near.net!howland.reston.ans.net!bogus.sura.net!news-feed-1.peachnet.edu!umn.edu!lynx.unm.edu!dns1.NMSU.Edu!dante!bgrubb
+From: bgrubb@dante.nmsu.edu (GRUBB)
+Newsgroups: comp.sys.ibm.pc.hardware,comp.sys.ibm.pc.misc,comp.os.ms-windows.advocacy,comp.os.os2.advocacy,comp.sys.mac.advocacy,comp.sys.mac.hardware
+Subject: Mac & IBM Info-Version 1.7.7
+Date: 20 Apr 1993 05:44:30 GMT
+Organization: New Mexico State University, Las Cruces, NM
+Lines: 753
+Distribution: world
+Message-ID: <1r02juINNpfp@dns1.NMSU.Edu>
+NNTP-Posting-Host: dante.nmsu.edu
+
+{Send follow ups to comp.sys.mac.advocacy. Sorry about the header but the 
+Pnews here does not let one easily change the headers and I gave up after a 
+year of trying. This sheet is also available by FTP on sumex-aim.stanford.edu 
+(36.44.0.6) in the info-mac/report as mac-ibm-compare177.txt.}
+Mac & IBM Info-Version 1.7.7
+
+The reason for this general data sheet is to consolidate and condense the 
+information out there, so that people in both camps can be clear and accurate 
+about what they are saying about their machines.  Since computer technology 
+is always changing there are always going to be points in which the sheet will 
+be lacking or incorrect on information.  So, please just don't say the sheet 
+is incomplete or incorrect but also give me clear and concise information to 
+make the needed corrections.  All prices are in US dollars.
+To keep this data sheet organized please provide, if possible, article 
+citations for the information provided or corrected and keep the opinions to 
+a minimum.  As this is a general data sheet, keep the info provided simple so 
+I can understand what is being talked about and can explain it to others. 
+Finally, keep the information relevant to the section corrected {For example, 
+OS code in ROM is software contained in hardware, so no more of the 'but it 
+is supported in OS disk software' data for the hardware section, please}. 
+Thank you.
+Note:  for proper reading off line this document should be in 9 point Monaco.
+
+Special thanks to ANDREW@aardvark.ucs.uoknor.edu (Chihuahua Charlie), 
+andrew@frip.wv.tek.com (Andrew Klossner), bell-peter@YALE.EDU (Peter Bell), 
+bcoleman@hayes.com (Bill Coleman), cj00+@andrew.cmu.edu (Carl B Jabido), d88-
+jwa@nada.kth.se (Jon Wtte) ephraim@Think.COM (Ephraim Vishniac), 
+fj05+@andrew.cmu.edu (Faisal Nameer Jawdat), gsidler@cafe.eecs.nwu.edu 
+(Gabriel Sidler), julian@deepthnk.kiwi.gen.nz (Julian Harris), 
+Erick.Krueger@um.cc.umich.edu, krueger@engin.umich.edu, 
+matt@wardsgi.med.yale.edu (Matt Healy), mark@bilpin.co.uk (Mark Allerton), 
+jokim@jarthur.claremont.edu (John H. Kim), mem@jhufos.pha.jhu.edu (Mel 
+Martinez), nan@matt.ksu.ksu.edu (Nan Zou), pwagner%us.oracle.com, 
+s_fuller@iastate.edu, strobl@gmd.de (Wolfgang Strobl), 
+jkirvin@pafosu1.hq.af.mil, phill@ichips.intel.com, 
+shaikha@duvm.ocs.drexel.edu, sxjcb@orca.alaska.edu (Jay C. Beavers), Lewis 
+Kawecki@novell.com, lamont@catfish16.rtsg.mot.com (Bradley Lamont), 
+cerro@mbcl.rutgers.edu ("Cerro, Joseph A"), mpark@utmem1.utmem.edu (Mel Park), 
+logullo@applelink.apple.com (Jeff Logullo), zrai02@hou.amoco.com (Robert 
+Irlbeck), and mikew@apple.com for providing some of the information that made 
+this list possible.
+ Contents
+CPUs
+Hardware
+ Monitor support
+ Expansion
+Operating system
+ OS Number Crunching
+Networking & Printing
+
+The CPUs
+ Note: I am only showing Motorola & Intel CPUs used in Mac and most IBM/PC 
+clone machines. For example, since Apple never used the Motorola 68008 and 
+68010 in the Mac these chips are not listed. Years only appear with dead CPUs 
+and indicate first to last year used as a CPU.
+Cache note:  both IBM and Mac use caches external to the CPUs. These external 
+caches increase the speed of the CPU but are not a part of it.  In most of 
+the present Macs there are external caches built-in while with IBM they are 
+optional {Though machines are generally sold with them installed}.  Since 
+there are many different external caches {CPU-Mac and IBM; SCSI, video, disk 
+and static RAM-Mac}, each having a different effect on CPU performance, and 
+they are machine {32KB static RAM cache in IIci, IIfx, and IIvx}, seller 
+{cache card installed in some IIcis} or expansion {IIci cache cards go up to 
+128KB} dependent, I have decided to leave them out of the list.
+Note:  ALU is industry's de-facto standard for CPU bit classification.
+IBM     ALU  Registers    External     CPU     Features/
+CPU                     bus  address  cache    Notes
+8088(6) 16      16    8 (16)   20     none     {1981-9} {198?-9}
+80186   16      16      16     20     none     {198?-9?} segmenting
+80286   16      16      16     24     none     80186 + Protected Mode
+80386   32      32      32     32     none     MMU & 32-bit Protected Mode 
+486sx   32      32      32     32    one 8K    80486 - FPU
+80486   32      32      32     32    one 8K    80386 & FPU
+486dx2  32      32      32     32    one 8K    doubled internal clock rate*
+486dx3  being demoed. 20/60 MHz, 25/75 MHz, and 33/99 MHz planned.
+Pentium 32      32      64     32    16K code, CISC chip with RISC-like  
+   5                                 16K data  features, 2-issue superscalar, 
+ [P 5]                                         386 Write-Back, 64-bit
+                                               FPU path, pipelining; Speed:
+                                               SPECint92: 64.5; SPECfp92:
+                                               56.9**
+
+386sx: 386 chip with 32-bit internal/16-bit external architecture.
+286 and 386sx chips can address to 16MB maximum RAM.
+386sl: low power(3.3V) 386sx with built-in power management.  Used mainly on 
+laptops.
+386slc: IBM 5V 386sx with a 16k on-chip cache added (John H. Kim).  As far as 
+John H. Kim knows it is only used on IBM models.
+486slc: Neither of two chips that have this name have a FPU.  Cyrix: basically 
+486sx in 386sx socket with 1k cache and improved integer math speed.  IBM: 
+equivalent to the 486sx except it has a 16k on-chip cache.
+
+* ex. for 486dx2/50, chip runs 50 MHz rest of machine runs at 25 MHz.
+***(PC Week 04/12/93; PC Mag 4/27/93:138) "The latest in a line of CISC chips" 
+(PC Mag 4/27/93:110)  Samples released March 22, 1993, but machines will not 
+be announced until at least May 1993 (PC Week 2/08/93).  $1000 a CPU; systems 
+$5000 and up (PC Mag 4/27/93:110). 
+
+Mac     ALU  Registers    External     CPU     Features/
+CPU                     bus  address  cache*   Notes
+68000   16      32      16     24      none    {1984-1993} 16MB limit**
+68020   32      32      32     32    256 code  {1987-1992} parallel processing
+68030   32      32      32     32    two 256   68020 + MMU, 16K burst mode
+68LC040 32      32      32     32     two 4K   68040 - FPU
+68040   32      32      32     32     two 4K   MMU, FPU, pipelining, doubled 
+                                               internal clock rate***
+68050	development discontinued in favor of 68060
+68060   32      32      32     32     Branch   68040 + a better FPU,  
+                                      target   superscaler pipelining, cache 
+                                               line bursts, equivalent 
+                                               capabilities & speeds to 
+                                               Pentium*#
+
+*includes data and instruction {code} caches.  The 68030, 68LC040, & 68040 
+have built-in caches for both.
+**68000 Mac designs created a 4MB limit.
+***The 040 has 2 clocks, an internal processor clock [PCLK] that is 2x freq of 
+external bus clock [BCLK] which is the one used to rate the chips 
+(Bradley Lamont; Motorola 68040 data book).  Some compilers produce programs 
+sensitive to the PCLK and so they act as if the 68040 was a clock doubler 
+chip, but this very compiler and program dependent.  Compliers maybe written 
+to allow programs to take consitant advantage of the 68040's PCLK in the 
+future.  As it is now, studies such as one in a Byte article {which showed 
+040/25 ~486/50 and roughly ~486dx2/50} are very dependent on the machine, OS, 
+and programs tested and as such are not representative of general performance.
+*#Motorola claims (PC Week 09/07/92; 09/14/92).
+
+As the PowerPCs are to be in both IBM and Mac machines I have listed them 
+separately to eliminate redundancy.  They are Motorola CPU RISC chips.
+
+PowerPC ALU  Registers    External     CPU     Features/
+CPU                     bus  address  cache    Notes
+MC98601 32      32    32 int   64     32K      Speed:  SPECint92: 50; 
+ [601]                32 fp         combined   SPECfp92: 80*
+                                      I/D      
+MC98603: low power MC98601 for desktop & portable systems. Out by end of 1993.
+ [603]
+MC98604: high performance MC98601 for high end machines. Out by 1st Q 1994.
+ [604]
+MC98620 64      64    32 int   64     32K      Out by mid 1994.
+ [620]                32 fp         combined    
+                                      I/D      
+
+*(PC Week 04/12/93; PC Mag 4/27/93:138).  Select venders were sent sample 
+MC98601 chips by Motorola 2/93 (PC Week 2/08/93), and some NuBus boards 
+containing early samples of PowerPC 601 have been given to Apple's "A-list" 
+developers (PC Week 12/7/92; MacWeek 12/14/92).  MC98601/50MHz-$280;
+MC98601/66MHz-$374 (PC Week 4/12/93).  Systems: ~$3500 with ~$2000 versions
+out by mid 1994 (PC Week 4/12/93).
+
+CPUs Comparison List
+As a general rule of thumb Motorola chips are faster than Intel chips at the 
+same frequency {030/25 ~= 386/33; 040/25 ~= 486dx/50}, but Intel has chips at 
+higher frequencies than Motorola, so this evens out.  The Macintosh Bible 4th 
+ed. supports the comparisons between Intel and Motorola chips for the 68020 
+and above.
+
+<=80186    ~ 68000 {16-bit vs 16/24/32-bit chip [data path/address 
+lines/data & address registers].  The 4MB limit on the 68000 Macs brings it 
+down to the 80186 and lower chips, otherwise it would compare to the 80286.}
+
+286        ~ 68020 {hardware segmenting vs. 68020's 32-bit ALU and these chips 
+come have no usable built-in MMU unlike their successors [80386, 68030].  The 
+hardware segmenting's protected mode is used by OS/2 1.0 => and Windows 3.X. 
+The use of the hardware segmenting and their 16-bit nature put the 286 between 
+the 60000 and 68030 in features and the LC's 16-bit data path strenghthens the 
+286 ~ 68020 comparison.}
+
+386       ~ 68030 {Two 32-bit chips with MMUs, and protected memory.  A/UX 3.0 
+is at present the only Mac OS to use the 68030's protected memory feature for 
+apps.  System 7.x uses this feature to protect a RAM disk created by the 
+Memory control panel but this is supported only on Powerbooks and Quadras.  
+The Color Classic and LCII 16-bit hardware data paths makes the 68030s in them 
+comparative to 386sxs.}
+
+486sx   ~ 68LC040 {same as 486 and 68040 without the FPU; used as a low cost 
+solution for people who do not need the FPU.  Only with programs sensitive to  
+PCLK & pipelining does the 68LC040 behave like 486dx2 - FPU or a '486dx2sx'.}
+
+486     ~ 68040 {two 32-bit microprocessors with built-in FPU, MMU, 8K 
+internal cache (which is implemented as two 4K caches in the 68040 and one in 
+the 486).  Only with programs sensitive to PCLK & pipelining does the 68040 
+behave like a 486dx2.}
+
+Pentium   ~ 68060 {Both are planned to be superscalar but both have heat 
+problems.  These chips may flounder against the cheaper (PC Week 3/08/93; 
+4/12/93; PC Mag 4/27/93:110), earlier released (PC Week 12/7/92; MacWeek 
+12/14/92; PC Week 2/08/93), less leat producing {160 degrees F for Pentium
+(PC Mag 4/27/93:118)}, and partly ported to PowerPC chips.} 
+
+PowerPC   = PowerPC {This CPU line is planned to run programs from DOS, 
+Windows 3.x, OS/2 and Mac OS on top of PowerOpen-A/UX 4.0 [UNIX] and later 
+Pink [Taligent OS] by using emulators or, if necessary, the OSes themselves in 
+a 'shell' a.k. how SoftPC or OS/2 does DOS.}
+
+Hardware 
+{In an effort to remove the 'reconfiguring the system almost every time you 
+add something' requirement for add-in cards, drivers, video, and operating 
+systems in the IBM world, Intel, Microsoft and 12 other hardware and software 
+developers are working out 'plug and play' standards (PC Week 03/08/93).}
+Color Support/Display
+ Mac: 30.24 MHz Pixel Clock standard.  All present Macs support the use of 
+32-bit color through 32-bit color QuickDraw in ROM.  32-bit color QuickDraw 
+allows an almost transparent capability to display and edit X-bit images in Y-
+bit color and retain ALL the colors of Y-bit color [Where X and Y 
+independently are 1, 2, 4, 8, 16, or 32] regardless of monitor resolution {63 
+dpi [12" color] to 94 dpi [PaletteBook]} or monitor type {including 
+autosynchronous VGA, MCGA and SVGA monitors with ranges including 66.7 hz 
+vertically and 35 kHz horizontally and only a hardware video adaptor (MacUser 
+Aug 1992: 158-176).  Older machines that supported color {SE/30, II, IIX, and 
+IIcx} had only 8-bit color in ROM and needed a software patch to use 32-bit 
+color (MacUser Special 1993:28-29).  
+To keep costs down and speed up most Macs have only 8 or 16 bit display 
+capability built-in, but most of those can be expanded to display 24-bit 
+color.    Presently QuickDraw is optimized for 72 dpi display; QuickDraw QX 
+will change this.
+In addition, QuickDraw allows, in Macs with a NuBus slot, more then one 
+monitor to be used in any combination, from two monitors showing the same 
+thing to multiple monitors acting as one large large monitor with any degree 
+of overlap of the pictures.
+VRAM: Video RAM.  Standard for present non-PowerBook Mac's handling of 
+ built-in video {from a 32-bit color palette}. VRAM provided runs a 8-bit
+ color 640x480 display; expandable to 16-bit color or a 8-bit 832x624 display. 
+Sound output:  Standard in all Macs since the 128K.  Stereo sound became 
+ standard with the SE/30.
+
+IBM:  Even though PCs have ROM BIOS definitions of how the operating system 
+interacts with the video hardware (Nan Zou), the use of drivers bypassing 
+BIOS, video hareware inconsitancies {see Super VGA below} and nonstanderzation
+of clone BIOS have left resolution of video display hardware, OS and program 
+interaction up to the OS and video hardware in question (Faisal Nameer 
+Jawdat). In addition, IBM and clone makers never bothered to provide a 
+standard hardware mechanism for software to determine what display mode is 
+actually present (Matt Healy) nor a standardized screen-drawing toolbox {like 
+Mac's QD}. As a result the OS must be very well written to detect some modes, 
+especially with some third party cards or to use them consitantly {At present 
+things are so dependent on the interaction of the program, OS, print driver 
+and monitor card that editing 32-bit pictures regardless of color mode, OS, 
+and monitor type/card combination as one can do on the Mac is impossible with 
+an IBM.  For example, one cannot edit a 32-bit color picture done on a OS/2 
+486 with a SVGA monitor on a 386 with VGA {18-bit color palette} and DOS 5.0 
+and still have ALL the colors one started out with}.
+Later IBM machines will have integrated graphics accelerators, faster 
+processors, and modular upgradeability and may have built-in sound cards, CD 
+ROM, and Ethernet (PC Week 12/14/92).  
+MDA: Monocrome Display Adapter
+ original character-mapped video mode, no graphics, 80x25 text.
+CGA: Color Graphics Array
+ 320x200 4 colors or 640x200 b/w, 16 color palette, bad for the eyes.
+EGA:  Enhanced Graphics Array
+ 640x350 16 colors from 64 color palette [and some lower res]; some versions 
+ could run at 256 colors, bearable on the eyes.
+VGA:  Video Graphics Array*
+ 320x200 at 256 colors, 640x480 at 16 colors, and some others, these two are 
+ the most commonly used.  All modes have a 256K CLUT, from a 
+ 18 to 24-bit {IBM} or a 32-bit {Mac} color palette.  25.175 MHz Pixel Clock
+ (Mel Martinez).  Monitors use analog input, incompatible with TTL signals
+ from EGA/CGA etc. 
+MCGA:  Multi-Color Graphics Array*
+ subset of VGA that provides all the features of MDA & CGA, but lacks some EGA 
+ and VGA modes, like VGA 640x480x16 (Dictionary of Computer Terms-DCT).  
+ Common on the initial PS/1 implementation from IBM and some PS/2 Models.
+SVGA:  Super VGA*
+ This is not a standard in the way the others were, but instead was a 'catch 
+ all' category for a group of video cards.  As such, with each manufacturer 
+ using their own implementation scheme, SVGA was chaos with people debating
+ as to what is SVGA and what is not.  In an effort to make SVGA more of a 
+ standard VESA was established and is used in the newer units, but things
+ are still a mess.  Video is either 512K [~1990] or 1M [today], resolution
+ of 800x600 and 1024x768 at 16 and 256 colors are common, newer ones [since 
+ 1990] have the Sierra HiColor RAMDAC, giving 15-bit 32,768 colors at 800x600, 
+ some of the very newer ones [~6/92] can do 24 bits per pixel [usually 
+ at 640x480].  Speedwise, too much variation, some very slow [Western Digital 
+ Paradise based, for example], some very fast [S3 86C911 based, for example], 
+ some are so-so [like Tseng ET4000, a very popular chipset].  Some limiting 
+ factors overcome by 40MHz VL Bus & 386's linear address mapping were: 
+ 8.33 MHz ISA bus, AT architecture where the CPU looks at the card through a 
+ 64K "window", etc.
+Other non-SVGA standards: 
+8514/a:
+ IBM's own standard, interlacing graphics accelerator with graphics functions 
+ like linedraw, polygon fill, etc. in hardware. Some clone implementations 
+ from ATI are the fastest video available today, though some clone models do 
+ not have interlacing. 
+TMS34010/34020: high end graphics co-processors, usually >$1000, some
+ do 24-bit, speeds up vector-oriented graphics like CAD.
+XGA:  eXtended Graphics Array
+ newer and faster than 8514/a, only available for MCA bus-based PS/2s, clones 
+ are coming out soon.  Emulates VGA, EGA, and CGA (DCT).  Max resolution at 
+ 1024x768x8b, same as 8514/a, also some 16 bpp modes.
+XGA-2
+ Accelerates graphics functions up to 20 times faster than standard VGA in
+ Windows and OS/2, including line draws, bit and pixel-block transfers, area
+ fills, masking and X/Y addressing. Has an intelligent way to detect and co-
+ exist with other XGA-2 cards, so multiple desktops like on the Mac may not be 
+ far away.  Since this is an architecture, its resolution and color depth 
+ isn't fixed {IBM implements only 16-bit [65,536] color, while other 
+ companies can have 24-bit color through IBM technical licenses}. Refresh 
+ rates up to 75 Hz, ensures flicker free, rock solid images to reduce visual 
+ discomfort, and is VGA compatible. Up to 1280x1024 on OS/2.
+*some monitor types usable by Mac-See Mac section above for specific details.
+
+Expansion
+Both Mac & IBM
+SCSI: only external device expansion interface common to both Mac and IBM.
+ Allows the use of any device: hard drive, printer, scanner, Nubus card 
+ expansion {Mac Plus only}, some monitors, and CD-ROM.  
+ Main problem:  there are a lot of external devices which are internal 
+ terminated which causes problems for more then two devises off the SCSI port 
+ {A SCSI chain is supposed to be terminated ONLY at the begining and at the 
+ end.  Any other set up causes problems for either Mac or IBM}. 
+SCSI-1:  7 devices per SCSI controller.  8-bit asynchronous {~1.5MB/s ave}
+ and synchronous {5MB/s max} transfers.  Difference is due to SCSI-1 software
+ drivers.  "Fast SCSI-1" is a misname for 8-bit SCSI-2 in SCSI-1 mode
+ {see SCSI-2 for details}.
+SCSI-2: 10 devices per SCSI controller in SCSI-2 mode.  SCSI-2 is fully
+ SCSI-1 compliant and 8-bit SCSI-2 tends to be implemented as a very fast
+ SCSI-1 since it does not require the different controller interfaces in  
+ hardware and software that 16 and 32-bit SCSI-2 do.  Transfer speeds are
+ 4-6MB/s with 10MB/s burst {8-bit}, 8-12MB/s with 20MB/s burst {16-bit}, and
+ 15-20MB/s with 40MB/s burst {32-bit/wide and fast}.  Since 8-bit SCSI-2 can
+ use SCSI-1 software drivers and hardware at 8-bit SCSI-2 speeds and as such
+ is limited to 7 devices sometimes it is mistakenly called "fast SCSI-1". 
+ 16-bit fast SCSI-2 requires a SCSI-2 software driver and SCSI-2 electronics
+ but can still use the SCSI-1 ports.  Wide 16-bit and 32-bit SCSI-2 require a
+ different SCSI port, electronics, and software driver from SCSI-1 {Which
+ makes them more expensive than other SCSI interfaces}.
+Mac SCSI: asynchronous SCSI-1 built-in standard since the Plus.  Even though 
+ Apple developed some specifications for SCSI controlers, the OS SCSI Manager
+ needs to be rewritten to take full advantage of the features of both SCSI
+ interfaces.  As a result present SCSI-2 Macs use 8-bit SCSI-2 as a fast 
+ asynchronous SCSI-1.  Presently Quadras are the only Macs with a SCSI-2
+ controller chip built-in (Digital Review, Oct 21, 1991 v8 n33 p8(1)) 
+ though they lack some other parts of the hardware, like the wide SCSI-2 port 
+ interface.  Since other Macs require a NuBus card to use SCSI-2, older NuBus 
+ Macs had a bottleneck due to the speed of the NuBus and CPU.  Rumor-some
+ Cyclone Macs {June} will come with a wide & fast SCSI-2 port standard 
+ and have a rewritten OS SCSI manager.
+IBM SCSI:  SCSI-1 is not too wide spread yet, generally not bundled with 
+ systems, except as add-on {EISA and VESA Local Bus adapters avalable}.
+ Like the Mac, 8-bit SCSI-2 is used as a very fast SCSI-1 by most controllers
+ out there.  Unlike the Mac, IBM has no exact SCSI controller specifications
+ which results in added incompatibilities for SCSI.
+
+Mac
+Memory expansion: with a few exceptions the Mac has used non-parity 30-pin 
+ 8-bit SIMM memory expansion since the Plus.  While 32-pin 9-bit parity SIMMs
+ could be used in these Macs, only special IIcis could make use of the parity 
+ feature {By convension both SIMM types are called 32-pin SIMMs}.  The IIfx 
+ used 64-pin parity SIMMs.  The LC III, C610/650 and Q800 all use a new 
+ 72-pin SIMM that is accessable by 32-bits at a time and is used in IBMs.
+ The Mac does a complete memory check at startup by writing/reading every
+ memory location; if something is seriously wrong with a SIMM the Mac will
+ not boot and give a sound chord indicating what the problem is.
+ Since Macs made before Feb 15, 1993 managed memory baced on data path, SIMMs 
+ had to be installed in pairs {16-bit} or in sets of 4 {32-bit}.  The Centris 
+ 650 and Quadra 800 eliminate this with a new memory management setup that 
+ allows memory to be upgraded one SIMM at a time.  If the SIMMs are the same 
+ size are used then the memory is 'interleaved' across the two SIMMs resulting 
+ in a 10-15% performance boost on RAM access (MacWorld Apr 93: 108-109).
+Printers, ADBs, and modems: built-in interfaces standard.
+Monitor interface and sound input: built-in on most present macs. 
+PDS: Available in SE & all present non-Powerbook Macs. 16-bit {SE, 
+ Portable, LC, LC II, Classic line} and 32-bit.  Operates at CPU's MHz.  
+ Maximum through put: data path in bytes*CPU's MHz {Q700/900 & C650: 
+ 4 * 25Mhz = 100MB/s; Q800 & Q950: 4 * 33Mhz = 132MB/s}. Standardized with
+ the LC and 040 bus designs.  With an adapter one NuBus card can be used in 
+ IIsi and C610.  Problem: some cards have timing dependency which slows 
+ through put down.
+NuBus Mac II: 32-bit, 10 MHz bus clock, 1-to-1 transaction/bus cycle ratio,
+ and contiguous, hand-shake transactions at ~10-20MB/s; theoretical peak:
+ 40MB/s.  Built-in on all Modular Macs except the LC series, C610, and 
+ Performa 400.  The SE/30 could be adapted to use this and there was even a 
+ Mac Plus SCSI NuBus.  Supports every possible expansion from CPU to Ethernet 
+ to DMA.
+NuBus 90: NuBus Mac II back compatable. 20MHz bus clock, avg throughput:
+ ~30MB/s; burst mode: 80MB/s.  Future card designs will be 7" instead of the 
+ old 12".
+QuickRing:  A peer-to-peer bus used in parallel with NuBus 90.  Apple's 
+ VLBus - "Architecture is identical to that of VLBus" (Byte 10/92:128).
+ Burst mode: 350MB/s (Byte 10/92:128). In development.
+CPU expansion: handled either through the PDS or the NuBus.  Unlike PDS,  
+ Nubus CPU cards {example-Radius Rocket} allow use of multiple processors at 
+ the same time.  This is like having two or more Macs in the same box able to 
+ dual task or joinly process depending on the card or software involved {Each 
+ NuBus card needs its own memory but most NuBus cards of this type come with 
+ 8MB RAM SIMMs on the card standard}.
+
+IBM
+Memory expansion:  parity SIMMs, non-parity SIMMs {some newer models do a Mac-
+like SIMM memory check}, or a dozen or so different types of memory boards.
+
+HD Interfaces {limited to hard drives by design or lack of development}: 
+MFM:  Modified Frequency Modulation, RLL:  Run Length Limited
+ only used with smaller [

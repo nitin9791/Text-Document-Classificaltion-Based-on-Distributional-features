@@ -1,0 +1,47 @@
+Path: cantaloupe.srv.cs.cmu.edu!das-news.harvard.edu!noc.near.net!uunet!digex.com!digex.net!not-for-mail
+From: prb@access.digex.net (Pat)
+Newsgroups: sci.space
+Subject: Re: Space Manuevering Tug (was HST servicing mission_)
+Date: 1 May 1993 15:25:38 -0400
+Organization: Express Access Online Communications USA
+Lines: 83
+Message-ID: <1ruiri$dig@access.digex.net>
+References: <1rnaih$jvj@access.digex.net> <C6BBow.IH9@news.cso.uiuc.edu>
+NNTP-Posting-Host: access.digex.net
+
+In article <C6BBow.IH9@news.cso.uiuc.edu> jbh55289@uxa.cso.uiuc.edu (Josh Hopkins) writes:
+>prb@access.digex.net (Pat) writes:
+|
+|>Given that what i described for the HST  seemed to be the SMT,   and given
+|>the mass amrgins on the discovery mission  is tight enough that  spacewalking
+|>has to be carefully constrained.....  No EDO pallets,  no spare Suits,
+|>no extra MMU's.   
+|
+|Has someone actually verified that mass is the predominant constraint on this
+|mission?  You seem to be assuming it without giving supporting evidence.  
+|
+
+Someone from NASA posted that there were very significant mass margins
+on the HST re-boost mission.  A while back i had asked why not carry
+the EDO pallet up,  and the answer was the mass margins were tight enough, they weren't even carrying extra suits.
+
+|>WHy not do this?
+|
+|>	Quick Test  Goldins philosophjy  of faster cheaper, better.
+|
+|>Build a real fast Space TUg,  to handle the re-boost  of the HST  using
+|>clean Cryo fuels,  and get it ready before the  HST mission.
+|
+|Pat, this would be slower, more expensive and worse.  
+|
+|Slower:  The shuttle mission is scheduled to go up in December.  That's less
+|than eight months away.  There is no way you could build new hardware, retrain
+|and reschedule the EVA's in that time.
+|
+
+Where's wingo when you need him:-)
+
+COme on.   Knock that S**T off.
+
+YOu forget,  that during skylab,  they did  overnight mission planning
+for the repair EVA's.   Also during the
